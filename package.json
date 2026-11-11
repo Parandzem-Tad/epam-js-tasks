@@ -1,0 +1,13 @@
+{
+  "name": "epam-js-tasks",
+  "version": "1.0.0",
+  "description": "Epam JS Automation Practical Task 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "tadevosyan.parandzem@mail.ru",
+  "license": "ISC",
+  "type": "commonjs"
+}
