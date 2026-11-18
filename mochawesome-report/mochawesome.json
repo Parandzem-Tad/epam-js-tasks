@@ -1,0 +1,331 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-11-17T10:59:10.267Z",
+    "end": "2026-11-17T10:59:10.275Z",
+    "duration": 8,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60740f1b-5a14-47a6-b4ce-31ec2028ca33",
+      "title": "",
+      "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+      "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fdd6da6a-bedd-45ed-bd4e-02b0b71c161c",
+          "title": "Numbersvalidator class tests",
+          "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+          "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Numbersvalidator class tests\"",
+              "fullTitle": "Numbersvalidator class tests \"before each\" hook in \"Numbersvalidator class tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator= new NumbersValidator();",
+              "err": {},
+              "uuid": "8e1d7df0-8ac4-48b1-821f-9f529a85e8ab",
+              "parentUUID": "fdd6da6a-bedd-45ed-bd4e-02b0b71c161c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a133a3ad-2671-489c-8ba3-e613c95e6db5",
+              "title": "isNumberEven method tests",
+              "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+              "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true if number is even",
+                  "fullTitle": "Numbersvalidator class tests isNumberEven method tests should return true if number is even",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result= validator.isNumberEven(4);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "aed038cf-839d-4f71-9b4b-e2d96800d62a",
+                  "parentUUID": "a133a3ad-2671-489c-8ba3-e613c95e6db5",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error if input is not a number",
+                  "fullTitle": "Numbersvalidator class tests isNumberEven method tests should throw an error if input is not a number",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(()=>{\n    validator.isNumberEven('4');\n}).to.throw('[4] is not of type \"Number\"');",
+                  "err": {},
+                  "uuid": "472efbf1-d410-437f-b2d4-f9392a952efa",
+                  "parentUUID": "a133a3ad-2671-489c-8ba3-e613c95e6db5",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "aed038cf-839d-4f71-9b4b-e2d96800d62a",
+                "472efbf1-d410-437f-b2d4-f9392a952efa"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "2f02e7ad-742d-4e6b-9769-6b7c189b2711",
+              "title": "isAllNumbers method tests",
+              "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+              "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true if all elements are numbers",
+                  "fullTitle": "Numbersvalidator class tests isAllNumbers method tests should return true if all elements are numbers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result=validator.isAllNumbers([1,2,3,4]);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "a27d456f-1b0e-4d1e-8764-cbad3f60ec2b",
+                  "parentUUID": "2f02e7ad-742d-4e6b-9769-6b7c189b2711",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error if input is not an array",
+                  "fullTitle": "Numbersvalidator class tests isAllNumbers method tests should throw an error if input is not an array",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(()=>{\n    validator.isAllNumbers('1,2,3');\n}).to.throw('[1,2,3] is not an array');",
+                  "err": {},
+                  "uuid": "e3808ff0-6dd2-40ef-b5e7-10f68c27263c",
+                  "parentUUID": "2f02e7ad-742d-4e6b-9769-6b7c189b2711",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a27d456f-1b0e-4d1e-8764-cbad3f60ec2b",
+                "e3808ff0-6dd2-40ef-b5e7-10f68c27263c"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "9ec34304-cb15-4ba1-b56f-eb164d405edf",
+              "title": "getEvenNumbersFromArray method tests",
+              "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+              "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return array of even numbers",
+                  "fullTitle": "Numbersvalidator class tests getEvenNumbersFromArray method tests should return array of even numbers",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result= validator.getEvenNumbersFromArray([1,2,3,4,5,6]);\nexpect(result).to.eql([2,4,6]);",
+                  "err": {},
+                  "uuid": "1925ab0c-e49f-44eb-8f3e-0c9e5ca3b8f3",
+                  "parentUUID": "9ec34304-cb15-4ba1-b56f-eb164d405edf",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error if getEvenNumbersFromArray is called with invalid data",
+                  "fullTitle": "Numbersvalidator class tests getEvenNumbersFromArray method tests should throw an error if getEvenNumbersFromArray is called with invalid data",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(()=>{\n    validator.getEvenNumbersFromArray('4');\n}).to.throw('[4] is not an array of \"Numbers');",
+                  "err": {},
+                  "uuid": "d4e3fb95-0e2b-409d-a5a0-f8ee664e2053",
+                  "parentUUID": "9ec34304-cb15-4ba1-b56f-eb164d405edf",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1925ab0c-e49f-44eb-8f3e-0c9e5ca3b8f3",
+                "d4e3fb95-0e2b-409d-a5a0-f8ee664e2053"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7a7cf241-d0b8-4eac-bcc4-ec5f168c89c4",
+              "title": "isInteger method tests",
+              "fullFile": "C:\\Users\\admin\\OneDrive\\Рабочий стол\\epam-js-tasks\\test\\numbers-validator\\numbers.validator.spec.js",
+              "file": "\\test\\numbers-validator\\numbers.validator.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return true if number is an integer",
+                  "fullTitle": "Numbersvalidator class tests isInteger method tests should return true if number is an integer",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const result= validator.isInteger(5);\nexpect(result).to.be.true;",
+                  "err": {},
+                  "uuid": "b2a9a592-1d44-497b-a011-020060315f56",
+                  "parentUUID": "7a7cf241-d0b8-4eac-bcc4-ec5f168c89c4",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should throw an error if input is not a number",
+                  "fullTitle": "Numbersvalidator class tests isInteger method tests should throw an error if input is not a number",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(()=>{\n    validator.isInteger('5');\n}).to.throw('is not a number');",
+                  "err": {},
+                  "uuid": "5362dfca-a2d4-4e2e-a8fc-078033bbd992",
+                  "parentUUID": "7a7cf241-d0b8-4eac-bcc4-ec5f168c89c4",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b2a9a592-1d44-497b-a011-020060315f56",
+                "5362dfca-a2d4-4e2e-a8fc-078033bbd992"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "12.0.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "8.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
